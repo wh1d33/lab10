@@ -2,31 +2,28 @@
 #define BOOK_H
 
 #include <string>
-using namespace std;
 
 class Book {
 private:
-    string title;
-    string author;
+    std::string title;
+    std::string author;
     int year;
-    string isbn;
+    std::string isbn;
 
 public:
-    Book(string title, string author, int year, string isbn);
+    Book(std::string title, std::string author, int year, std::string isbn);
 
-    string getTitle() const;
-    string getAuthor() const;
+    std::string getTitle() const;
+    std::string getAuthor() const;
     int getYear() const;
-    string getISBN() const;
+    std::string getISBN() const;
 
-    void setTitle(const string& title);
-    void setAuthor(const string& author);
-    void setYear(int year);
-    void setISBN(const string& isbn);
+    void setTitle(const std::string& newTitle);
+    void setAuthor(const std::string& newAuthor);
+    void setYear(int newYear);
+    void setISBN(const std::string& newISBN);
 
     bool operator==(const Book& other) const;
-
-    void display() const;
 };
 
 #endif
