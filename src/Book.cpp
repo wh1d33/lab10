@@ -1,4 +1,5 @@
 #include "../include/Book.h"
+#include <iostream>
 
 Book::Book(std::string title, std::string author, int year, std::string isbn)
     : title(title), author(author), year(year), isbn(isbn) {}
