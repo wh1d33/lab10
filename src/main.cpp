@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Library.h"
+#include "../include/Library.h"
 
 int main() {
     Library lib;
