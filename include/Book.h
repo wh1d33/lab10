@@ -1,6 +1,4 @@
-#ifndef BOOK_H
-#define BOOK_H
-
+#pragma once
 #include <string>
 
 class Book {
@@ -11,19 +9,19 @@ private:
     std::string isbn;
 
 public:
-    Book(std::string title, std::string author, int year, std::string isbn);
-
+    Book(std::string t, std::string a, int y, std::string i);
+    
+    // Геттери
     std::string getTitle() const;
     std::string getAuthor() const;
     int getYear() const;
     std::string getISBN() const;
 
-    void setTitle(const std::string& newTitle);
-    void setAuthor(const std::string& newAuthor);
-    void setYear(int newYear);
-    void setISBN(const std::string& newISBN);
+    // Сеттери
+    void setTitle(const std::string& t);
+    void setAuthor(const std::string& a);
+    void setYear(int y);
+    void setISBN(const std::string& i);
 
     bool operator==(const Book& other) const;
 };
-
-#endif
