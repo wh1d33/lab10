@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build LibraryManagement",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/*.cpp",   
+                "-I", "include",
+                "-o", "main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
